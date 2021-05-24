@@ -4,7 +4,7 @@
 
 Name:           texlive-filesystem
 Version:        %{tl_version}
-Release:        24
+Release:        25
 Epoch:          8
 Summary:        TeX formatting system
 License:        Artistic 2.0 and GPLv2 and GPLv2+ and LGPLv2+ and LPPL and MIT and Public Domain and UCD and Utopia
@@ -446,8 +446,8 @@ Requires:       texlive-stix2-otf, texlive-stix2-type1, texlive-superiors, texli
 Requires:       texlive-tapir, texlive-tempora, texlive-tengwarscript, texlive-tfrupee
 Requires:       texlive-tinos, texlive-tpslifonts, texlive-trajan, texlive-txfontsb
 Requires:       texlive-txuprcal, texlive-typicons, texlive-umtypewriter, texlive-universa
-Requires:       texlive-universalis, texlive-uppunctlm, texlive-urwchancal, texlive-venturisadf
-Requires:       texlive-wsuipa, texlive-xcharter, texlive-xits, texlive-yfonts
+Requires:       texlive-universalis, texlive-uppunctlm, texlive-urwchancal
+Requires:       texlive-xcharter, texlive-xits, texlive-yfonts
 Requires:       texlive-yfonts-t1, texlive-yinit-otf, texlive-zlmtt
 
 %description -n texlive-collection-fontsextra
@@ -845,7 +845,7 @@ Requires:       texlive-hyphen-thai, texlive-hyphen-turkmen
 Requires:       texlive-latex-mr-doc, texlive-latexbangla
 Requires:       texlive-lshort-thai-doc, texlive-lshort-vietnamese-doc
 Requires:       texlive-ntheorem-vn-doc, texlive-padauk, texlive-sanskrit, texlive-sanskrit-t1
-Requires:       texlive-thaienum, texlive-thaispec, texlive-velthuis, texlive-vntex
+Requires:       texlive-thaienum, texlive-thaispec, texlive-velthuis
 Requires:       texlive-wnri, texlive-wnri-latex, texlive-xetex-devanagari
 
 %description -n texlive-collection-langother
@@ -1814,6 +1814,9 @@ install -d %{buildroot}%{_sysconfdir}/texlive/tex/generic/config
 
 
 %changelog
+* Mon May 24 2021 maminjie <maminjie1@huawei.com> - 8:2018-25
+- Remove the Requires texlive-venturisadf,texlive-wsuipa,texlive-vntex (are dropped)
+
 * Wed May 19 2021 maminjie <maminjie1@huawei.com> - 8:2018-24
 - split texlive
 
