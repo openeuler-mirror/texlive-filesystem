@@ -4,7 +4,7 @@
 
 Name:           texlive-filesystem
 Version:        %{tl_version}
-Release:        25
+Release:        26
 Epoch:          8
 Summary:        TeX formatting system
 License:        Artistic 2.0 and GPLv2 and GPLv2+ and LGPLv2+ and LPPL and MIT and Public Domain and UCD and Utopia
@@ -35,7 +35,6 @@ Source7147:     http://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2018/t
 Source7152:     http://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2018/tlnet-final/archive/collection-langitalian.tar.xz
 Source7153:     http://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2018/tlnet-final/archive/collection-langjapanese.tar.xz
 Source7159:     http://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2018/tlnet-final/archive/collection-langkorean.tar.xz
-Source7161:     http://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2018/tlnet-final/archive/collection-langother.tar.xz
 Source7162:     http://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2018/tlnet-final/archive/collection-langpolish.tar.xz
 Source7164:     http://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2018/tlnet-final/archive/collection-langportuguese.tar.xz
 Source7165:     http://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2018/tlnet-final/archive/collection-langspanish.tar.xz
@@ -50,12 +49,10 @@ Source7202:     http://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2018/t
 Source7206:     http://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2018/tlnet-final/archive/collection-xetex.tar.xz
 Source7207:     http://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2018/tlnet-final/archive/scheme-basic.tar.xz
 Source7208:     http://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2018/tlnet-final/archive/scheme-context.tar.xz
-Source7209:     http://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2018/tlnet-final/archive/scheme-full.tar.xz
 Source7210:     http://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2018/tlnet-final/archive/scheme-gust.tar.xz
 Source7211:     http://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2018/tlnet-final/archive/scheme-medium.tar.xz
 Source7212:     http://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2018/tlnet-final/archive/scheme-minimal.tar.xz
 Source7213:     http://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2018/tlnet-final/archive/scheme-small.tar.xz
-Source7214:     http://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2018/tlnet-final/archive/scheme-tetex.tar.xz
 Source7613:     http://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2018/tlnet-final/archive/collection-plaingeneric.tar.xz
 Source7614:     http://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2018/tlnet-final/archive/collection-mathscience.tar.xz
 
@@ -95,34 +92,6 @@ Obsoletes:      texlive-texmf-context < %{tl_version}
 
 %description -n texlive-scheme-context
 This is the TeX Live scheme for installing ConTeXt.
-
-%package -n texlive-scheme-full
-Summary:        full scheme (everything)
-Version:        svn44177
-Requires:       texlive-base, texlive-collection-basic, texlive-collection-bibtexextra, texlive-collection-binextra
-Requires:       texlive-collection-context, texlive-collection-fontsextra
-Requires:       texlive-collection-fontsrecommended, texlive-collection-formatsextra
-Requires:       texlive-collection-fontutils, texlive-collection-games
-Requires:       texlive-collection-humanities, texlive-collection-langarabic
-Requires:       texlive-collection-langchinese, texlive-collection-langcjk
-Requires:       texlive-collection-langcyrillic, texlive-collection-langczechslovak
-Requires:       texlive-collection-langenglish, texlive-collection-langeuropean
-Requires:       texlive-collection-langfrench, texlive-collection-langgerman
-Requires:       texlive-collection-langgreek, texlive-collection-langitalian
-Requires:       texlive-collection-langjapanese, texlive-collection-langkorean
-Requires:       texlive-collection-langother, texlive-collection-langpolish
-Requires:       texlive-collection-langportuguese, texlive-collection-langspanish
-Requires:       texlive-collection-latex, texlive-collection-latexextra
-Requires:       texlive-collection-latexrecommended, texlive-collection-luatex
-Requires:       texlive-collection-mathscience, texlive-collection-metapost
-Requires:       texlive-collection-music, texlive-collection-pictures
-Requires:       texlive-collection-plaingeneric, texlive-collection-pstricks
-Requires:       texlive-collection-publishers, texlive-collection-texworks
-Requires:       texlive-collection-xetex
-
-%description -n texlive-scheme-full
-This is the full TeX Live scheme: it installs everything
-available.
 
 %package -n texlive-scheme-gust
 Summary:        GUST TeX Live scheme
@@ -204,39 +173,6 @@ Requires:       texlive-hyphen-swedish
 This is a small TeX Live scheme, corresponding to MacTeX's
 BasicTeX variant.  It adds XeTeX, MetaPost, various
 hyphenations, and some recommended packages to scheme-basic.
-
-%package -n texlive-scheme-tetex
-Summary:        teTeX scheme (more than medium, but nowhere near full)
-Version:        svn44187
-Requires:       texlive-base, texlive-FAQ-en-doc, texlive-SIunits, texlive-acronym
-Requires:       texlive-amslatex-primer-doc, texlive-bbm
-Requires:       texlive-bbm-macros, texlive-bbold, texlive-bibtex8, texlive-ctie
-Requires:       texlive-detex, texlive-dtl, texlive-dvi2tty, texlive-dvicopy
-Requires:       texlive-dvidvi, texlive-dviljk, texlive-patgen, texlive-pdftools
-Requires:       texlive-seetexk, texlive-tie, texlive-web, texlive-cmbright
-Requires:       texlive-cweb, texlive-eplain, texlive-eulervm, texlive-gentle-doc
-Requires:       texlive-lshort-english-doc, texlive-mltex
-Requires:       texlive-multirow, texlive-nomencl, texlive-pst-pdf, texlive-rsfs
-Requires:       texlive-subfigure, texlive-supertabular, texlive-tamethebeast-doc, texlive-tds-doc
-Requires:       texlive-tex-refs-doc, texlive-collection-basic
-Requires:       texlive-collection-context, texlive-collection-fontsrecommended
-Requires:       texlive-collection-fontutils, texlive-collection-langcjk
-Requires:       texlive-collection-langcyrillic, texlive-collection-langczechslovak
-Requires:       texlive-collection-langenglish, texlive-collection-langeuropean
-Requires:       texlive-collection-langfrench, texlive-collection-langgerman
-Requires:       texlive-collection-langgreek, texlive-collection-langitalian
-Requires:       texlive-collection-langother, texlive-collection-langpolish
-Requires:       texlive-collection-langportuguese, texlive-collection-langspanish
-Requires:       texlive-collection-latex, texlive-collection-latexrecommended
-Requires:       texlive-collection-mathscience, texlive-collection-metapost
-Requires:       texlive-collection-formatsextra, texlive-collection-pictures
-Requires:       texlive-collection-plaingeneric, texlive-collection-pstricks
-Provides:       tetex = 3.1-99
-Obsoletes:      tetex < 3.1-99, texlive-dviutils < %{tl_version}
-
-%description -n texlive-scheme-tetex
-TeX Live scheme nearly equivalent to the teTeX distribution
-that was maintained by Thomas Esser.
 
 %package -n texlive-collection-basic
 Summary:        Essential programs and files
@@ -820,39 +756,6 @@ Requires:       texlive-uhc, texlive-unfonts-core, texlive-unfonts-extra
 
 %description -n texlive-collection-langkorean
 Support for Korean; additional packages in collection-langcjk.
-
-%package -n texlive-collection-langother
-Summary:        Other languages
-Version:        svn46722
-Provides:       texlive-collection-langafrica = svn30372.0.obsolete
-Obsoletes:      texlive-collection-langafrica <= svn30372.0
-Provides:       texlive-collection-langindic = svn35737.0.obsolete
-Obsoletes:      texlive-collection-langindic <= svn35737.0
-Requires:       texlive-base, texlive-collection-basic, texlive-amsldoc-vn-doc, texlive-aramaic-serto
-Requires:       texlive-babel-azerbaijani, texlive-babel-esperanto
-Requires:       texlive-babel-georgian, texlive-babel-hebrew
-Requires:       texlive-babel-indonesian, texlive-babel-interlingua
-Requires:       texlive-babel-malay, texlive-babel-sorbian
-Requires:       texlive-babel-thai, texlive-babel-vietnamese
-Requires:       texlive-bangtex, texlive-bengali, texlive-burmese, texlive-cjhebrew
-Requires:       texlive-ctib, texlive-ebong, texlive-ethiop, texlive-ethiop-t1
-Requires:       texlive-fc, texlive-fonts-tlwg, texlive-hyphen-afrikaans, texlive-hyphen-armenian
-Requires:       texlive-hyphen-coptic, texlive-hyphen-esperanto
-Requires:       texlive-hyphen-ethiopic, texlive-hyphen-georgian
-Requires:       texlive-hyphen-indic, texlive-hyphen-indonesian
-Requires:       texlive-hyphen-interlingua, texlive-hyphen-sanskrit
-Requires:       texlive-hyphen-thai, texlive-hyphen-turkmen
-Requires:       texlive-latex-mr-doc, texlive-latexbangla
-Requires:       texlive-lshort-thai-doc, texlive-lshort-vietnamese-doc
-Requires:       texlive-ntheorem-vn-doc, texlive-padauk, texlive-sanskrit, texlive-sanskrit-t1
-Requires:       texlive-thaienum, texlive-thaispec, texlive-velthuis
-Requires:       texlive-wnri, texlive-wnri-latex, texlive-xetex-devanagari
-
-%description -n texlive-collection-langother
-Support for languages not otherwise listed, including Thai,
-Vietnamese, Hebrew, Indonesian, and plenty more.  The split is
-made simply on the basis of the size of the support, to keep
-both collection sizes and the number of collections reasonable.
 
 %package -n texlive-collection-langpolish
 Summary:        Polish
@@ -1676,9 +1579,6 @@ install -d %{buildroot}%{_sysconfdir}/texlive/tex/generic/config
 %files -n texlive-scheme-context
 %defattr(-,root,root,755)
 
-%files -n texlive-scheme-full
-%defattr(-,root,root,755)
-
 %files -n texlive-scheme-gust
 %defattr(-,root,root,755)
 
@@ -1690,10 +1590,6 @@ install -d %{buildroot}%{_sysconfdir}/texlive/tex/generic/config
 
 %files -n texlive-scheme-small
 %defattr(-,root,root,755)
-
-%files -n texlive-scheme-tetex
-%defattr(-,root,root,755)
-
 
 %files -n texlive-collection-basic
 %defattr(-,root,root,755)
@@ -1764,9 +1660,6 @@ install -d %{buildroot}%{_sysconfdir}/texlive/tex/generic/config
 %files -n texlive-collection-langkorean
 %defattr(-,root,root,755)
 
-%files -n texlive-collection-langother
-%defattr(-,root,root,755)
-
 %files -n texlive-collection-langpolish
 %defattr(-,root,root,755)
 
@@ -1814,6 +1707,10 @@ install -d %{buildroot}%{_sysconfdir}/texlive/tex/generic/config
 
 
 %changelog
+* Thu Aug 19 2021 sunguoshuai <sunguoshuai@huawei.com> - 8:2018-25
+- Remove texlive-collection-langother,texlive-scheme-full,texlive-scheme-tetex
+  who requires texlive-vntex
+
 * Mon May 24 2021 maminjie <maminjie1@huawei.com> - 8:2018-25
 - Remove the Requires texlive-venturisadf,texlive-wsuipa,texlive-vntex (are dropped)
 
