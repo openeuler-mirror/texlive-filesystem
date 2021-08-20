@@ -4,7 +4,7 @@
 
 Name:           texlive-filesystem
 Version:        %{tl_version}
-Release:        26
+Release:        27
 Epoch:          8
 Summary:        TeX formatting system
 License:        Artistic 2.0 and GPLv2 and GPLv2+ and LGPLv2+ and LPPL and MIT and Public Domain and UCD and Utopia
@@ -16,12 +16,10 @@ Source2347:     http://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2018/t
 Source7036:     http://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2018/tlnet-final/archive/collection-latex.tar.xz
 Source7043:     http://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2018/tlnet-final/archive/collection-binextra.tar.xz
 Source7101:     http://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2018/tlnet-final/archive/collection-context.tar.xz
-Source7105:     http://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2018/tlnet-final/archive/collection-fontsextra.tar.xz
 Source7106:     http://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2018/tlnet-final/archive/collection-fontsrecommended.tar.xz
 Source7107:     http://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2018/tlnet-final/archive/collection-fontutils.tar.xz
 Source7118:     http://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2018/tlnet-final/archive/collection-formatsextra.tar.xz
 Source7123:     http://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2018/tlnet-final/archive/collection-games.tar.xz
-Source7131:     http://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2018/tlnet-final/archive/collection-humanities.tar.xz
 Source7134:     http://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2018/tlnet-final/archive/collection-langarabic.tar.xz
 Source7135:     http://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2018/tlnet-final/archive/collection-langchinese.tar.xz
 Source7136:     http://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2018/tlnet-final/archive/collection-langcjk.tar.xz
@@ -311,84 +309,6 @@ Requires:       texlive-context-vim, texlive-context-visualcounter
 Hans Hagen's powerful ConTeXt system, http://pragma-ade.com.
 Also includes third-party ConTeXt packages.
 
-%package -n texlive-collection-fontsextra
-Summary:        Additional fonts
-Version:        svn47656
-Requires:       texlive-base, texlive-collection-basic, texlive-asana-math, texlive-academicons
-Requires:       texlive-accanthis, texlive-adforn, texlive-adfsymbols, texlive-aecc
-Requires:       texlive-alegreya, texlive-algolrevived, texlive-allrunes, texlive-almfixed
-Requires:       texlive-anonymouspro, texlive-antiqua, texlive-antt, texlive-archaic
-Requires:       texlive-arev, texlive-arimo, texlive-asapsym, texlive-ascii-font
-Requires:       texlive-aspectratio, texlive-astro, texlive-augie, texlive-auncial-new
-Requires:       texlive-aurical, texlive-b1encoding, texlive-barcodes, texlive-baskervald
-Requires:       texlive-baskervaldx, texlive-baskervillef
-Requires:       texlive-bbding, texlive-bbm, texlive-bbm-macros, texlive-bbold
-Requires:       texlive-bbold-type1, texlive-belleek, texlive-bera, texlive-berenisadf
-Requires:       texlive-beuron, texlive-bguq, texlive-blacklettert1, texlive-boisik
-Requires:       texlive-bookhands, texlive-boondox, texlive-braille, texlive-brushscr
-Requires:       texlive-cabin, texlive-caladea, texlive-calligra, texlive-calligra-type1
-Requires:       texlive-cantarell, texlive-carlito, texlive-carolmin-ps, texlive-ccicons
-Requires:       texlive-cfr-initials, texlive-cfr-lm, texlive-cherokee, texlive-chivo
-Requires:       texlive-cinzel, texlive-clearsans, texlive-cm-lgc, texlive-cm-mf-extra-bold
-Requires:       texlive-cm-unicode, texlive-cmbright, texlive-cmexb, texlive-cmll
-Requires:       texlive-cmpica, texlive-cmsrb, texlive-cmtiup, texlive-cochineal
-Requires:       texlive-comfortaa, texlive-comicneue, texlive-concmath-fonts, texlive-cookingsymbols
-Requires:       texlive-cormorantgaramond, texlive-countriesofeurope
-Requires:       texlive-courier-scaled, texlive-crimson, texlive-cryst, texlive-cyklop
-Requires:       texlive-dancers, texlive-dantelogo, texlive-dejavu, texlive-dejavu-otf
-Requires:       texlive-dice, texlive-dictsym, texlive-dingbat, texlive-doublestroke
-Requires:       texlive-dozenal, texlive-drm, texlive-droid, texlive-dsserif
-Requires:       texlive-duerer, texlive-duerer-latex, texlive-dutchcal, texlive-ean
-Requires:       texlive-ebgaramond, texlive-ebgaramond-maths
-Requires:       texlive-ecc, texlive-eco, texlive-eiad, texlive-eiad-ltx
-Requires:       texlive-electrum, texlive-elvish, texlive-epigrafica, texlive-epsdice
-Requires:       texlive-erewhon, texlive-esrelation, texlive-esstix, texlive-esvect
-Requires:       texlive-eulervm, texlive-euxm, texlive-fbb, texlive-fdsymbol
-Requires:       texlive-fetamont, texlive-feyn, texlive-fge, texlive-fira
-Requires:       texlive-foekfont, texlive-fonetika, texlive-fontawesome, texlive-fontawesome5
-Requires:       texlive-fontmfizz, texlive-fonts-churchslavonic
-Requires:       texlive-fourier, texlive-fouriernc, texlive-frcursive, texlive-frederika2016
-Requires:       texlive-genealogy, texlive-gentium-tug, texlive-gfsartemisia, texlive-gfsbodoni
-Requires:       texlive-gfscomplutum, texlive-gfsdidot, texlive-gfsneohellenic, texlive-gfsneohellenicmath
-Requires:       texlive-gfssolomos, texlive-gillcm, texlive-gillius, texlive-gnu-freefont
-Requires:       texlive-gofonts, texlive-gothic, texlive-greenpoint, texlive-grotesq
-Requires:       texlive-hacm, texlive-hands, texlive-heuristica, texlive-hfbright
-Requires:       texlive-hfoldsty, texlive-ifsym, texlive-imfellenglish, texlive-inconsolata
-Requires:       texlive-initials, texlive-ipaex-type1, texlive-iwona, texlive-jablantile
-Requires:       texlive-jamtimes, texlive-junicode, texlive-kixfont, texlive-kpfonts
-Requires:       texlive-kurier, texlive-lato, texlive-lfb, texlive-libertine
-Requires:       texlive-libertinegc, texlive-libertinus, texlive-libertinus-otf, texlive-libertinust1math
-Requires:       texlive-librebaskerville, texlive-librebodoni
-Requires:       texlive-librecaslon, texlive-libris, texlive-lineara, texlive-lobster2
-Requires:       texlive-lxfonts, texlive-ly1, texlive-mathabx, texlive-mathabx-type1
-Requires:       texlive-mathdesign, texlive-mdputu, texlive-mdsymbol, texlive-merriweather
-Requires:       texlive-miama, texlive-mintspirit, texlive-missaali, texlive-mnsymbol
-Requires:       texlive-montserrat, texlive-mweights, texlive-newpx, texlive-newtx
-Requires:       texlive-newtxsf, texlive-newtxtt, texlive-niceframe-type1, texlive-nimbus15
-Requires:       texlive-nkarta, texlive-noto, texlive-obnov, texlive-ocherokee
-Requires:       texlive-ocr-b, texlive-ocr-b-outline, texlive-ogham, texlive-oinuit
-Requires:       texlive-old-arrows, texlive-oldlatin, texlive-oldstandard, texlive-opensans
-Requires:       texlive-orkhun, texlive-overlock, texlive-pacioli, texlive-paratype
-Requires:       texlive-phaistos, texlive-phonetic, texlive-pigpen, texlive-playfair
-Requires:       texlive-plex, texlive-plex-otf, texlive-poltawski, texlive-prodint
-Requires:       texlive-punk, texlive-punk-latex, texlive-punknova, texlive-pxtxalfa
-Requires:       texlive-quattrocento, texlive-raleway, texlive-recycle, texlive-roboto
-Requires:       texlive-romande, texlive-rosario, texlive-rsfso, texlive-sansmathaccent
-Requires:       texlive-sansmathfonts, texlive-sauter, texlive-sauterfonts, texlive-schulschriften
-Requires:       texlive-semaphor, texlive-shobhika, texlive-skull, texlive-sourcecodepro
-Requires:       texlive-sourcesanspro, texlive-sourceserifpro
-Requires:       texlive-starfont, texlive-staves, texlive-stickstoo, texlive-stix
-Requires:       texlive-stix2-otf, texlive-stix2-type1, texlive-superiors, texlive-svrsymbols
-Requires:       texlive-tapir, texlive-tempora, texlive-tengwarscript, texlive-tfrupee
-Requires:       texlive-tinos, texlive-tpslifonts, texlive-trajan, texlive-txfontsb
-Requires:       texlive-txuprcal, texlive-typicons, texlive-umtypewriter, texlive-universa
-Requires:       texlive-universalis, texlive-uppunctlm, texlive-urwchancal
-Requires:       texlive-xcharter, texlive-xits, texlive-yfonts
-Requires:       texlive-yfonts-t1, texlive-yinit-otf, texlive-zlmtt
-
-%description -n texlive-collection-fontsextra
-collection-fontsextra package
-
 %package -n texlive-collection-fontsrecommended
 Summary:        Recommended fonts
 Version:        svn35830.0
@@ -461,28 +381,6 @@ Requires:       texlive-xskak
 
 %description -n texlive-collection-games
 Setups for typesetting various games, including chess.
-
-%package -n texlive-collection-humanities
-Summary:        Humanities packages
-Version:        svn45363
-Requires:       texlive-base, texlive-collection-latex, texlive-adtrees, texlive-bibleref
-Requires:       texlive-bibleref-lds, texlive-bibleref-mouth
-Requires:       texlive-bibleref-parse, texlive-covington
-Requires:       texlive-diadia, texlive-dramatist, texlive-dvgloss, texlive-ecltree
-Requires:       texlive-edfnotes, texlive-ednotes, texlive-eledform, texlive-eledmac
-Requires:       texlive-expex, texlive-gb4e, texlive-gmverse, texlive-jura
-Requires:       texlive-juraabbrev, texlive-juramisc, texlive-jurarsp, texlive-ledmac
-Requires:       texlive-lexikon, texlive-lexref, texlive-ling-macros, texlive-linguex
-Requires:       texlive-liturg, texlive-metrix, texlive-parallel, texlive-parrun
-Requires:       texlive-phonrule, texlive-plari, texlive-play, texlive-poemscol
-Requires:       texlive-poetry, texlive-poetrytex, texlive-qobitree, texlive-qtree
-Requires:       texlive-reledmac, texlive-rrgtrees, texlive-rtklage, texlive-screenplay
-Requires:       texlive-screenplay-pkg, texlive-sides, texlive-stage, texlive-textglos
-Requires:       texlive-thalie, texlive-tree-dvips, texlive-verse, texlive-xyling
-
-%description -n texlive-collection-humanities
-Packages for law, linguistics, social sciences, humanities,
-etc.
 
 %package -n texlive-collection-langarabic
 Summary:        Arabic
@@ -1603,9 +1501,6 @@ install -d %{buildroot}%{_sysconfdir}/texlive/tex/generic/config
 %files -n texlive-collection-context
 %defattr(-,root,root,755)
 
-%files -n texlive-collection-fontsextra
-%defattr(-,root,root,755)
-
 %files -n texlive-collection-fontsrecommended
 %defattr(-,root,root,755)
 
@@ -1616,9 +1511,6 @@ install -d %{buildroot}%{_sysconfdir}/texlive/tex/generic/config
 %defattr(-,root,root,755)
 
 %files -n texlive-collection-games
-%defattr(-,root,root,755)
-
-%files -n texlive-collection-humanities
 %defattr(-,root,root,755)
 
 %files -n texlive-collection-langarabic
@@ -1707,7 +1599,10 @@ install -d %{buildroot}%{_sysconfdir}/texlive/tex/generic/config
 
 
 %changelog
-* Thu Aug 19 2021 sunguoshuai <sunguoshuai@huawei.com> - 8:2018-25
+* Fri Aug 20 2021 caodongxia <caodongxia@huawei.com> - 8:2018-27
+- Remove texlive-collection-fontsextra,texlive-collection-humanities who requires texlive-wsuipa
+
+* Thu Aug 19 2021 sunguoshuai <sunguoshuai@huawei.com> - 8:2018-26
 - Remove texlive-collection-langother,texlive-scheme-full,texlive-scheme-tetex
   who requires texlive-vntex
 
